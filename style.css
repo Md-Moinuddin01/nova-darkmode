@@ -314,3 +314,138 @@ img {
   right: 18px;
   bottom: 18px;
 }
+
+/* Cards */
+.feature-grid,
+.service-grid,
+.project-grid,
+.testimonial-grid,
+.stat-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-2);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card,
+.project .thumb {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.project:hover .thumb {
+  transform: translateY(-4px);
+}
+
+.feature-grid .card,
+.service {
+  padding: 24px;
+}
+
+.service .icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: rgba(79, 140, 255, 0.12);
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.project {
+  overflow: hidden;
+  padding: 14px;
+}
+
+.thumb {
+  height: 200px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.thumb-1 {
+  background: linear-gradient(135deg, #21345a, #4f8cff);
+}
+
+.thumb-2 {
+  background: linear-gradient(135deg, #1d2638, #3e516f);
+}
+
+.thumb-3 {
+  background: linear-gradient(135deg, #182233, #2f61c8);
+}
+
+.thumb-4 {
+  background: linear-gradient(135deg, #20283d, #5f8fff);
+}
+
+.project h3,
+.service h3,
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.stat {
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.quote {
+  padding: 24px;
+}
+
+.quote p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.form {
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  background: #0f1117;
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79, 140, 255, 0.12);
+}
+
